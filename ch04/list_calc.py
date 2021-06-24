@@ -5,14 +5,17 @@ sum = 0
 avg = 0.0
 count = len(score)
 
-print("개수 : %d개" % count)
+#print("개수 : %d개" % count)
+print("개수 : {}개".format(count))
 
 # 합계
 for i in score:
     sum += i
     print("i=%d, sum=%d" % (i,sum))
 
-print("합계 : %d점" % sum)
+#print("합계 : %d점" % sum)
+#print("합계 : {}점".format(sum))
+print(f"합계 : {sum}점")
 
 # 평균
 
