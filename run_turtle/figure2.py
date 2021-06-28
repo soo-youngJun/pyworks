@@ -24,3 +24,4 @@ t.color('blue')
 t.pensize(3)
 t.circle(50)
 
+t.mainloop()

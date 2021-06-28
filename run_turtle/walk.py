@@ -13,3 +13,4 @@ for x in range(100): # 거북이가 100번 움직임
     t.setheading(angle) # 거북이의 방향
     t.forward(15) 
 
+t.mainloop()
