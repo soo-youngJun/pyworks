@@ -1,5 +1,5 @@
 # 1번
-
+'''
 class Calculator:
     def __init__(self):
         self.value = 0
@@ -32,4 +32,41 @@ print(cal.value)
 cal = MaxLimitCalculator()
 print(cal.add(50))
 print(cal.add(60))
-print(cal.value)
+print(cal.value
+
+
+# 3번
+
+all([1, 2, abs(-3)-3]) # False
+chr(ord('a'))=='a' # True
+
+
+
+# 4번
+
+li = [1, -2, 3, -5, 8, -3]
+
+#print(list(filter(lambda x : x >= 0, li)))
+def positive(a):
+    a2 = []
+    for i in li:
+        if i >= 0:
+            a2.append(i)
+    return a2
+
+li2 = positive(li)
+print(li2)
+'''
+
+# 6번
+def times(a):
+    a2 = []
+    for i in a:
+        a2.append(i*3)
+    return a2
+
+li = [1, 2, 3, 4]
+li2 = times(li)
+print(li2)
+
+print(list(map(lambda x: x * 3, li)))

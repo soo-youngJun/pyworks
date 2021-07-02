@@ -3,7 +3,7 @@ import random
 import time
 
 f = open('words.txt', 'r')
-word = f.read().split()
+word = f.read().split()   # 공백 또는 줄바꿈으로 나눔/ readline의 경우 1가지만 출력
 print(word)
 f.close()
 
