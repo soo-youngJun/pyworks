@@ -2,7 +2,7 @@
 
 from bs4 import BeautifulSoup
 
-html_str="""
+html_str = """
 <html>
 <body>
     <ul class='item'>
@@ -19,9 +19,14 @@ html_str="""
 </html>
 """
 
-soup = BeautifulSoup(html_str, 'html.parser')
-#print(soup)
+contents = BeautifulSoup(html_str, 'html.parser')
+ul = contents.find('ul', {'class':'lang'})
+#print(ul)
 
-ul = soup.find('ul')   # find() 는 맨 처음 나오는 태그만 검색
-print(ul)
-print(ul.text)  # 태그 빼고 텍스트만
+#li = ul.find('li')
+#print(li)   # 맨 위 li만 검색
+
+#중국어 검색 방법
+lis = ul.find_all('li')
+print(lis)
+print(lis[1].text)

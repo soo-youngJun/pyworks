@@ -2,5 +2,5 @@
 
 from urllib import request
 
-content = request.urlopen("http://never.com")
+content = request.urlopen("http://daum.net")
 print(content.read())
