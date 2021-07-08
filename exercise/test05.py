@@ -56,7 +56,7 @@ def positive(a):
 
 li2 = positive(li)
 print(li2)
-'''
+
 
 # 6번
 def times(a):
@@ -70,3 +70,45 @@ li2 = times(li)
 print(li2)
 
 print(list(map(lambda x: x * 3, li)))
+
+
+# 7번
+
+def find_max(li):
+    max = li[0]
+    for i in li:
+        if max < li[i]:
+            max = li[i]
+    return max
+    #for i in range(len(li)):
+    #    if max < li[i]:
+    #        max = li[i]
+
+
+d1 = [-8,2,7,5,-3,5,0,1]
+#max = max(d1)
+max = find_max(d1)
+print(max)
+min = min(d1)
+#print(min)
+#print(max + min)
+
+
+# 8번
+
+print(round(17/3, 4))
+#import math
+#print(math.floor(17/3))
+'''
+# 12번
+
+import time
+import datetime
+now1 = datetime.datetime.now()
+print(now1.strftime("%Y/%m/%d %H:%M:%S"))
+
+now2 = time.strftime("%Y/%m/%d %H:%M:%S")
+print(now2)
+
+
+

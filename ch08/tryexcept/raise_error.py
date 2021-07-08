@@ -2,6 +2,7 @@
 
 class Bird:
     def fly(self):
+        #print("새가 하늘을 높이 납니다.")
         raise NotImplemented
 
 class Eagle(Bird):
